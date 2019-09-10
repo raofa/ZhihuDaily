@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comment_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comment_avatar"
+        android:layout_below="@id/comment_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="15dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        />
+
+    <RelativeLayout
+        android:id="@+id/comment_reply_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_content"
+        android:layout_toRightOf="@id/comment_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <TextView
+            android:id="@+id/reply_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/reply_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reply_name"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
